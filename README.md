@@ -2,6 +2,9 @@
 基于PuppyPi的八自由度四足机器人控制以及硬件实现
 
 base_driver是基于STM32F405RGT6和PCA9685的舵机驱动模块的腿部逆运动学解算，接收树莓派上位机的足端位置指令控制腿部运动
+foot_serial_pkg是ros2功能包，集成了串口通信与步态轨迹生成
+底层驱动板是Altium Designer工程文件，为主控板，使用PCA9685集成16路pwm驱动
+IMU是陀螺仪模块的Altium Designer工程文件，用于自稳
 
 实现了对PuppyPi四足机器人的足端逆运动学和正运动学解算以及控制
 i2c1用于驱动PCA9685芯片
